@@ -1,0 +1,66 @@
+.content {
+    width: 100%;
+
+    background: rgba(20,20,20, 0.5);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.125);
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .container {
+        max-width: 1180px;
+        padding: 1.5rem;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        font-size: 0.8rem;
+        color: var(--white);
+
+        .logo {
+            max-width: 270px;
+            margin: 0 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        nav {
+            width: 500px;
+            display: flex;
+            justify-content: space-around;
+            
+            text-transform: capitalize;
+
+            a {
+                position: relative;
+                cursor: pointer;
+
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: -100%;
+                    bottom: -3px;
+
+                    width: 100%;
+                    height: 1px;
+                    background: transparent;
+                    
+                    transition: 250ms;
+                }
+                &:hover::after {
+                    background: var(--white);
+                    left: 0
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.content {
+    background: url("../../assets/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    color: var(--grey-900);
+    
+    position: relative;
+
+    .container  {
+        padding: 4rem 15px;
+
+        max-width: 1100px;
+        margin: 0 auto;
+
+        h2 {
+            margin: 1rem 0 4rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+
+            span {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 4px;
+                    bottom: -8px;
+                    left: 0;
+                    background-color: var(--grey-900);
+                }
+            }
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            color: var(--white);
+
+            .card {
+                padding: 0 15px;
+                margin: 15px 0;
+
+                width: 25%;
+                text-align: center;
+
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                }
+
+                .wrapper {
+                    padding: 15px;
+                    background: rgba(80, 80, 80, 0.75);
+                    backdrop-filter: blur(8px);
+                    border-radius: 4px;
+                   
+                    will-change: transform;
+
+                    
+                    img {
+                        height: 2.5rem;
+                        margin: 1rem 0;
+                        filter: brightness(0);
+
+                        transition: 0.4s;
+                    }
+
+                    h3 {
+                        font-size: 1.25rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 0.95rem;
+                        margin: 15px 0;
+                    }
+
+                    transition: transform 0.25s;
+
+                    &:hover {
+                        transform: scale(1.05);
+
+                        img {
+                            filter: brightness(1)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

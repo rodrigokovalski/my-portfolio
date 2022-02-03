@@ -1,0 +1,56 @@
+.content {
+    background-color: var(--white);
+    color: var(--grey-900);
+    position: relative;
+
+    .container  {
+        padding: 4rem 15px;
+
+        max-width: 1100px;
+        margin: 0 auto;
+
+        h2 {
+            margin: 1rem 0 0.5rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+
+            span {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 4px;
+                    bottom: -8px;
+                    left: 0;
+                    background-color: var(--grey-900);
+                }
+            }
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            div {
+                width: 50%;
+                margin: 15px 0;
+                padding: 0 15px;
+
+                p {
+                    text-align: justify;
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+                }
+
+                @media screen and (max-width: 500px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

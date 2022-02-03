@@ -1,5 +1,7 @@
 import styles from './styles.module.scss'
 
+import { Link , animateScroll as scroll } from 'react-scroll'
+
 import ArrowUp from '../../assets/chevron-up.svg'
 
 export function Footer(){
@@ -9,9 +11,14 @@ export function Footer(){
                 <div className={styles.contact}>
                     
                 </div>
-                <a href="#home">
+                <Link 
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
                     <img src={ArrowUp} alt="" width="25"/>
-                </a>
+                </Link>
             </div>
         </footer>
     );

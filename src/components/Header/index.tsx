@@ -7,13 +7,21 @@ export function Header() {
         <header className={styles.content}>
             <div className={styles.container}>
             <a href="#home">
-                <div className={styles.logo}>
-                    Rodrigo Kovalski
-                </div>
+                <Link 
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    <div className={styles.logo}>
+                      Rodrigo Kovalski
+                  </div>
+                </Link>   
             </a>
             <nav>
                 <Link 
                     to="about"
+                    offset={-50}
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -22,6 +30,7 @@ export function Header() {
                 </Link>
                 <Link 
                     to="skills"
+                    offset={-50}
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -30,6 +39,7 @@ export function Header() {
                 </Link>
                 <Link 
                     to="projects"
+                    offset={-50}
                     spy={true}
                     smooth={true}
                     duration={500}

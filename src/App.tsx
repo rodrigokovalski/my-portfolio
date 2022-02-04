@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import './styles/global.scss'
 
 import { Header } from "./components/Header"
@@ -10,7 +12,16 @@ import { SocialButton } from './components/SocialButton'
 import { Portfolio } from './components/Portfolio'
 import { PageTitle } from './components/PageTitle'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <PageTitle />

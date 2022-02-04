@@ -6,18 +6,16 @@ export function Header() {
     return (
         <header className={styles.content}>
             <div className={styles.container}>
-            <a href="#home">
-                <Link 
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >
-                    <div className={styles.logo}>
-                      Rodrigo Kovalski
-                  </div>
-                </Link>   
-            </a>
+            <Link 
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
+                <div className={styles.logo}>
+                    Rodrigo Kovalski
+                </div>
+            </Link>   
             <nav>
                 <Link 
                     to="about"

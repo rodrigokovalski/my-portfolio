@@ -11,3 +11,6 @@ Preprocessor Sass
 
 -- yarn add react-scroll
 -- yarn add@types/react-scroll -D
+
+-- yarn add aos
+-- yarn add @types/aos

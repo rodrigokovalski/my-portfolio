@@ -23,6 +23,10 @@
         font-size: 0.8rem;
         color: var(--white);
 
+        a {
+            cursor: pointer
+        }
+
         .logo {
             max-width: 270px;
             margin: 0 15px;

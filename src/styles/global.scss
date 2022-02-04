@@ -8,7 +8,7 @@
     --white: #F1F1F1;
     
     --grey-300: #a8a8b3;
-    --grey-800: #333335;
+    --grey-800: #292929;
     --grey-900: #121214;
 
     --blue-800: #0c122c;
@@ -30,7 +30,17 @@
 
 body {
     background: var(--white);
-    color: var(--white)
+    color: var(--white);
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: var(--grey-900);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--grey-800);
+        border-radius: 4px
+    }
 }
 
 body, input, textarea, select, button {

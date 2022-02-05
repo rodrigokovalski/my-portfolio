@@ -28,11 +28,13 @@ function App() {
       <SocialButton />
       <Header />
       <BannerHome />
-      <About />
-      <Skills />
-      <Portfolio />
-      <WhiteSpace />
-      <Footer />
+      <section id="page">
+        <About />
+        <Skills />
+        <Portfolio />
+        <WhiteSpace />
+        <Footer />
+      </section>
     </>
   )
 }

@@ -15,23 +15,43 @@
         
         .title {
 
-            h1 {
+            h1 , p {
                 font-size: 5rem;
                 color: var(--white);
-                padding: 2rem;
+                padding: 0 2rem;
+            }
 
-                span {
-                    font-size: 4rem;
+            p {
+                font-weight: bold
+            }
+
+
+            @media screen and (min-width: 1000px) {
+                .typing {
+                    width: 97%;
+                    animation: typing 2s steps(40), blink .5s step-end infinite alternate;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 3px solid;
+                }
+            }
+   
+            @keyframes typing {
+                from {
+                    width: 0
                 }
             }
 
-            @media screen and (max-width: 500px) {
-                h1 {
-                    font-size: 4rem;
+            @keyframes blink {
+                50% {
+                    border-color: transparent
+                }
+            }
+            
 
-                    span {
-                        font-size: 2rem;
-                    }
+            @media screen and (max-width: 500px) {
+                h1, p {
+                    font-size: 4rem;
                 }
             }
             

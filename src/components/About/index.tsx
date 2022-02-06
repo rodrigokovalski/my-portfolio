@@ -1,7 +1,24 @@
 import styles from './styles.module.scss'
 import CardInfo from '../../assets/desktop-guy.svg'
+import { useEffect, useState } from 'react';
+
+interface Repository {
+    name: string,
+    bio: string
+}
 
 export function About(){
+
+    const [ repository, setRepository ] = useState<Repository>()
+
+    useEffect(() => {
+    fetch('https://api.github.com/users/rodrigokovalski')
+    .then(response => response.json())
+    .then(data => setRepository(data))
+   }, [])
+
+   console.log(repository)
+
     return (
         <div className={styles.content} id="about">
           <div className={styles.container}>  
@@ -14,7 +31,7 @@ export function About(){
                 </div>
                 <div data-aos="fade-left">
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        {repository?.bio}
                     </p>
                 </div>
             </div>

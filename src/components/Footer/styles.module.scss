@@ -16,6 +16,19 @@
     
             transform: translateY(-25%);
             margin: 0 2rem;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .picture {
+                overflow: hidden;
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                background-color: black;
+            }
         }
     }
     a {

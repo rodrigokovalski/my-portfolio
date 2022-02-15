@@ -19,42 +19,42 @@ export function Skills(){
                         <div className={styles.wrapper}>
                             <img src={Web} alt="Web Development" />
                             <h3>Web Development</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>Tools and knowledge to improve performace of your website!</p>
                         </div>
                     </div>
                     <div className={styles.card} data-aos="flip-left" data-aos-duration="1000">
                         <div className={styles.wrapper}>
                             <img src={Html} alt="Html5" />
                             <h3>HTML5</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>Using best practices to create a semantic page structure!</p>
                         </div>
                     </div>
                     <div className={styles.card} data-aos="flip-left" data-aos-duration="1000">
                         <div className={styles.wrapper}>
                             <img src={Css} alt="Css3" />
                             <h3>CSS3</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>Styling your page with responsive designs and cool animations!</p>
                         </div>
                     </div>
                     <div className={styles.card} data-aos="flip-left" data-aos-duration="1000">
                         <div className={styles.wrapper}>
                             <img src={Js} alt="JavaScript" />
                             <h3>JavaScript</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>Coding your page with scalable and performatic scripts!</p>
                         </div>
                     </div>
                     <div className={styles.card} data-aos="flip-left" data-aos-duration="1000">
                         <div className={styles.wrapper}>
                             <img src={Bs} alt="Bootstrap" />
                             <h3>Bootstrap</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>A framework that helps me to be more productive when developing!</p>
                         </div>
                     </div>
                     <div className={styles.card} data-aos="flip-left" data-aos-duration="1000">
                         <div className={styles.wrapper}>
                             <img src={React} alt="ReactJS" />
                             <h3>ReactJS</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>An awesome library that has been used by most of Front-End engineers!</p>
                         </div>
                     </div>
                 </div>

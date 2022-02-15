@@ -28,7 +28,7 @@ function App() {
       <SocialButton />
       <Header />
       <BannerHome />
-      <section id="page ">
+      <section id="page">
         <About />
         <Skills />
         <Portfolio />

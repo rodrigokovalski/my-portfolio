@@ -47,6 +47,10 @@ body, input, textarea, select, button {
     font: 400 1rem 'Rubik', sans-serif;
 }
 
+ul, ol {
+    list-style-type: none;
+}
+
 button {
     cursor: pointer
 }

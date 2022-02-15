@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import { Link , animateScroll as scroll } from 'react-scroll'
 
 import ArrowUp from '../../assets/chevron-up.svg'
-import profilePicture from '../../assets/pp.jpg'
+import Profile from '../../assets/profile.png'
 
 import Instagram from '../../assets/instagram-square-brands.svg'
 import Linkedin from '../../assets/linkedin-brands.svg'
@@ -16,7 +16,7 @@ export function Footer(){
             <div className={styles.container}>
                 <div className={styles.contact}>
                     <div className={styles.picture}>
-                        <img src={profilePicture} alt="Rodrigo Kovaslski" />
+                        <img src={Profile} alt="Rodrigo Kovaslski" />
                     </div>
                     <div className={styles.info}>
                         <ul>

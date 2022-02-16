@@ -8,7 +8,7 @@ export function PageTitle() {
                     <h1>
                         Hey, I'm a <br />
                     </h1>
-                    <p className={styles.typing}>Front End Developer!</p>
+                    <p className={styles.typing}>Front End Engineer!</p>
                 </div>
             </div>
         </div>
